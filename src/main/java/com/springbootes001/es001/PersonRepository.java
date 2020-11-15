@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface PersonRepository extends Repository<Person, String> {
     List<Person> findByLastName(String lastName);
+
+    Person findById(Long id);
 }
